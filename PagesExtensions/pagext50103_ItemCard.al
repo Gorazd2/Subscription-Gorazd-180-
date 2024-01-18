@@ -32,9 +32,13 @@ pageextension 50103 "CSD ItemCardExt" extends "Item Card"
                 RunObject = page "CSD Customer Subscriptions";
                 RunPageLink = "Item No" = field("No.");
                 image = InsuranceRegisters;
-                Promoted = true;
-                PromotedCategory = Process;
                 ToolTip = 'Subscriptions';
+            }
+        }
+        addlast(Category_Process)
+        {
+            actionref(Subscriptions_Promoted; Subscriptions)
+            {
             }
         }
     }

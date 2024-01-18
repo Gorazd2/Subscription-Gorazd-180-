@@ -25,9 +25,13 @@ pageextension 50104 "CSD Item List" extends "Item List"
                 RunObject = page "CSD Customer Subscriptions";
                 RunPageLink = "Customer No" = field("No.");
                 image = InsuranceRegisters;
-                Promoted = true;
-                PromotedCategory = Process;
                 ToolTip = 'Subscriptions';
+            }
+        }
+        addlast(Category_Process)
+        {
+            actionref(Subscriptions_Promoted; Subscriptions)
+            {
             }
         }
     }
